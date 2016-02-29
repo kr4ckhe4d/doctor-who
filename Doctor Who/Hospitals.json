@@ -1,0 +1,13 @@
+@[
+  @"Royal Hospital",@"Asiri Hospital",@"Asiri Surgical Hospital",@"The Central Hospital"],
+  @[@"Royal Hospital",@"Asiri Hospital"],@[@"Asiri Surgical Hospital",@"The Central Hospital",@"Durdans Hospital"],
+  @[@"Asiri Surgical Hospital",@"Nawaloka Hospital"],
+  @[@"Royal Hospital",@"Asiri Hospital",@"Nawaloka Hospital"],
+  @[@"Asiri Surgical Hospital",@"Nawaloka Hospital"],
+  @[@"Royal Hospital",@"Durdans Hospital",@"Nawaloka Hospital"],
+  @[@"Asiri Surgical Hospital",@"dfs"],
+  @[@"Royal Hospital",@"Durdans Hospital",@"Nawaloka Hospital"],
+  @[@"Royal Hospital",@"Asiri Hospital"],
+  @[@"Asiri Hospital",@"The Central Hospital",@"Nawaloka Hospital"],
+  @[@"Royal Hospital",@"Asiri Surgical Hospital",@"The Central Hospital"]
+]
