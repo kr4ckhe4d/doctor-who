@@ -18,6 +18,8 @@ NSArray *locations;
 NSArray *doctorsArray;
 NSArray *hospitalsArray;
 
+NSDictionary *doctorsArrayss;
+
 NSMutableArray * matches;
 
 NSString *searchString;
@@ -33,19 +35,42 @@ NSInteger locationIndex;
     self.title = @"HOME";
     _btnDoctor.layer.cornerRadius = BUTTON_RADIUS;
     
-    //Assigning Array Values
-    specialities = [NSArray arrayWithArray:SPECIALITIES_ARRAY];
-    locations = [NSArray arrayWithArray:LOCATIONS_ARRAY];
-    doctorsArray = [NSArray arrayWithArray:DOCTORS_ARRAY];
-    hospitalsArray = [NSArray arrayWithArray:HOSPITALS_ARRAY];
+    
+    doctorsArrayss = @{
+                      @"names" : @[
+                              @"Peter Allen",@"Tina Arena",@"Jimmy Barnes",@"Nick Cave",@"John Farnham",@"Jimmy Fallon",@"Sean Allen",@"Jaqueline Arena",@"Missy Higgins",@"Georg Danzer",@"Rainhard Fendrich",@"Jacques Brel"
+                              
+                              ],
+                      @"speciality" : @[
+                              @"Allergy or Immunology",@"Anesthesiology",@"Cancer Surgeon",@"Dermatologists",@"Emergency Medicine",@"Gynecologic Oncology",@"Hematology",@"Internal Medicine",@"Dentist",@"Cardiologist",@"Paediatrics",@"Neuro Surgeon"
+                              ],
+                      @"hospitals" : @[
+                              @[@"Royal Hospital",@"Asiri Hospital",@"Asiri Surgical Hospital",@"The Central Hospital"],
+                              @[@"Royal Hospital",@"Asiri Hospital"],
+                              @[@"Asiri Surgical Hospital",@"The Central Hospital",@"Durdans Hospital"],
+                              @[@"Asiri Surgical Hospital",@"Nawaloka Hospital"],
+                              @[@"Royal Hospital",@"Asiri Hospital",@"Nawaloka Hospital"],
+                              @[@"Asiri Surgical Hospital",@"Nawaloka Hospital"],
+                              @[@"Royal Hospital",@"Durdans Hospital",@"Nawaloka Hospital"],
+                              @[@"Asiri Surgical Hospital",@"The Central Hospital"],
+                              @[@"Royal Hospital",@"Durdans Hospital",@"Nawaloka Hospital"],
+                              @[@"Royal Hospital",@"Asiri Hospital"],
+                              @[@"Asiri Hospital",@"The Central Hospital",@"Nawaloka Hospital"],
+                              @[@"Royal Hospital",@"Asiri Surgical Hospital",@"The Central Hospital"]
+                              ],
+                      @"locations" : @[
+                              @"Colombo",@"Galle",@"Kandy",@"Matara",@"Negombo",@"Hambantota",@"Polonnaruwa",@"Jaffna",@"Trincomalee",@"Kurunegala",@"Kegalle",@"Jaffna"
+                              ]
+                      
+                      };
     
     //Specialities Drop down configuration
-    self.specialityPicker = [[DownPicker alloc] initWithTextField:self.txtSpeciality withData:specialities];
+    self.specialityPicker = [[DownPicker alloc] initWithTextField:self.txtSpeciality withData:[doctorsArrayss objectForKey:@"speciality"]];
     [self.specialityPicker setPlaceholder:@"- Speciality -"];
     [self.specialityPicker addTarget:self action:@selector(sp_Selected:) forControlEvents:UIControlEventValueChanged];
     
     //Locations Dropdown configuration
-    self.locationsPicker = [[DownPicker alloc] initWithTextField:self.txtLocation withData:locations];
+    self.locationsPicker = [[DownPicker alloc] initWithTextField:self.txtLocation withData:[doctorsArrayss objectForKey:@"locations"]];
     [self.locationsPicker setPlaceholder:@"- Location -"];
     [self.locationsPicker addTarget:self action:@selector(location_Selected:) forControlEvents:UIControlEventValueChanged];
     
@@ -54,8 +79,6 @@ NSInteger locationIndex;
                   action:@selector(textFieldDidChange:)
         forControlEvents:UIControlEventEditingChanged];
     
-    //hospitalsArray = [NSArray arrayWithArray:[self readData:@"Hospitals"]];
-    //specialities = [NSArray arrayWithArray:[self readData:@"Specialities"]];
     NSLog(@"%@",[self readData:@"test"]);
     
     // Do any additional setup after loading the view, typically from a nib.
@@ -85,13 +108,9 @@ NSInteger locationIndex;
     searchString = [self.txtName text];
     NSString *predicate = [NSString stringWithFormat:@"SELF contains[c] '%@'",searchString];
     
-    matches = [NSMutableArray arrayWithArray:doctorsArray];
+    matches = [NSMutableArray arrayWithArray:[doctorsArrayss objectForKey:@"names"]];
     [matches filterUsingPredicate:[NSPredicate predicateWithFormat:predicate]];
     
-    //NSMutableSet * notmatches = [NSMutableSet setWithArray:doctorsArray];
-    // [notmatches  minusSet:matches];
-    
-   // NSLog(@"%@",matches);
     [self.tableView reloadData];
     
 }
@@ -126,7 +145,7 @@ NSInteger locationIndex;
 }
 
 
-#pragma mark - Table View
+#pragma mark - TableView delegate methods
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     NSUInteger number = [matches count];
     return number;
@@ -138,7 +157,7 @@ NSInteger locationIndex;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     NSString *doctorName = [matches objectAtIndex:indexPath.row];
-    NSString *doctorSpeciality = [specialities objectAtIndex:indexPath.row];
+    NSString *doctorSpeciality = [[doctorsArrayss objectForKey:@"speciality"] objectAtIndex:indexPath.row];
     
     cell.textLabel.text=doctorName;
     cell.detailTextLabel.text=doctorSpeciality;
@@ -148,6 +167,12 @@ NSInteger locationIndex;
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    NSInteger anIndex=[[doctorsArrayss objectForKey:@"names"] indexOfObject:[matches objectAtIndex:indexPath.row]];
+    if(NSNotFound == anIndex) {
+        NSLog(@"not found");
+    }
+    NSLog(@"Selected index %ld",(long)anIndex);
+    
     [self performSegueWithIdentifier:@"DOCTOR_PROFILE" sender:self];
 }
 
@@ -155,6 +180,8 @@ NSInteger locationIndex;
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NSInteger anIndex=[[doctorsArrayss objectForKey:@"names"] indexOfObject:[matches objectAtIndex:indexPath.row]];
+    
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     // now you can use cell.textLabel.text
     
@@ -165,7 +192,7 @@ NSInteger locationIndex;
     
     doctorprofile.selectedName = selectedName;
     doctorprofile.selectedSpeciality = selectedSpeciality;
-    doctorprofile.hospitalsArray = [hospitalsArray objectAtIndex:indexPath.row];
+    doctorprofile.hospitalsArray = [[doctorsArrayss objectForKey:@"hospitals"] objectAtIndex:anIndex];
     
     //[self.tableView reloadData];
 }

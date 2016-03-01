@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"DOCTOR PROFILE";
+    
     NSLog(@"%@",self.hospitalsArray);
     
     self.btnShowReviews.layer.cornerRadius=BUTTON_RADIUS;
@@ -29,6 +30,7 @@
     
     self.lblDoctorName.text = [NSString stringWithFormat:@"Dr. %@",self.selectedName];
     self.lblSpeciality.text = [NSString stringWithFormat:@"%@",self.selectedSpeciality];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -67,10 +69,16 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    [self performSegueWithIdentifier:@"DOCTOR_PROFILE" sender:self];
+    [self performSegueWithIdentifier:@"DOCTOR_REVIEW" sender:self];
 }
 
+#pragma mark - Button Actions
 
+- (IBAction)showReviews:(id)sender {
+}
+
+- (IBAction)writeReview:(id)sender {
+}
 
 /*
 #pragma mark - Navigation

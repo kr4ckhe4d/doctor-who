@@ -11,6 +11,7 @@
 #import "Constants.h"
 
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UIButton *btnDoctor;
 
 @property (weak, nonatomic) IBOutlet UITextField *txtSpeciality;
@@ -22,10 +23,11 @@
 @property (strong, nonatomic) DownPicker *specialityPicker;
 @property (strong, nonatomic) DownPicker *locationsPicker;
 
-- (IBAction)btnSearch:(id)sender;
+- (IBAction) btnSearch:(id)sender;
 
--(void)sp_Selected:(id)dp;
--(void)location_Selected:(id)dp;
+- (void) sp_Selected:(id)dp;
+- (void)location_Selected:(id)dp;
+
+- (void) locationSelected : (id) index;  //get location by  index
 
 @end
-
