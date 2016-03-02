@@ -8,42 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		3D6C682CCA790B4C45FB70B4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BA545F08FB1E2810939787 /* libPods.a */; };
-		7CD30DFD1C7EF1F300D65841 /* NawalokaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD30DFC1C7EF1F300D65841 /* NawalokaViewController.m */; };
+		7CA436791C85B0FB00908B30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA436781C85B0FB00908B30 /* AppDelegate.m */; };
+		7CA4367E1C85B11900908B30 /* DoctorProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4367B1C85B11900908B30 /* DoctorProfileViewController.m */; };
+		7CA4367F1C85B11900908B30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4367D1C85B11900908B30 /* ViewController.m */; };
+		7CA436831C85B12D00908B30 /* Hospitals.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CA436801C85B12D00908B30 /* Hospitals.json */; };
+		7CA436841C85B12D00908B30 /* Specialities.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CA436811C85B12D00908B30 /* Specialities.json */; };
+		7CA436851C85B12D00908B30 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CA436821C85B12D00908B30 /* test.json */; };
+		7CA436881C85B14A00908B30 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA436871C85B14A00908B30 /* Constants.m */; };
 		7CDD87731C7C69D5001A753F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDD87721C7C69D5001A753F /* main.m */; };
-		7CDD87761C7C69D5001A753F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDD87751C7C69D5001A753F /* AppDelegate.m */; };
-		7CDD87791C7C69D5001A753F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDD87781C7C69D5001A753F /* ViewController.m */; };
 		7CDD877C1C7C69D5001A753F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CDD877A1C7C69D5001A753F /* Main.storyboard */; };
 		7CDD877E1C7C69D5001A753F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CDD877D1C7C69D5001A753F /* Assets.xcassets */; };
 		7CDD87811C7C69D5001A753F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CDD877F1C7C69D5001A753F /* LaunchScreen.storyboard */; };
-		7CDDA3E51C7FF13800D9B453 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDDA3E41C7FF13800D9B453 /* Constants.m */; };
-		7CDDA3E81C80100A00D9B453 /* Hospitals.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CDDA3E71C80100A00D9B453 /* Hospitals.json */; };
-		7CDDA3EA1C801C0700D9B453 /* Specialities.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CDDA3E91C801C0700D9B453 /* Specialities.json */; };
-		7CDDA3EC1C80484400D9B453 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CDDA3EB1C80484400D9B453 /* test.json */; };
-		7CE1A0861C7DD48F0096EF5C /* DoctorProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1A0851C7DD48F0096EF5C /* DoctorProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		61BA545F08FB1E2810939787 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A141F6EB9C3E98B9F5F4C6B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		7CD30DFB1C7EF1F300D65841 /* NawalokaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NawalokaViewController.h; sourceTree = "<group>"; };
-		7CD30DFC1C7EF1F300D65841 /* NawalokaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NawalokaViewController.m; sourceTree = "<group>"; };
+		7CA436771C85B0FB00908B30 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppMain/AppDelegate.h; sourceTree = "<group>"; };
+		7CA436781C85B0FB00908B30 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppMain/AppDelegate.m; sourceTree = "<group>"; };
+		7CA4367A1C85B11900908B30 /* DoctorProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DoctorProfileViewController.h; path = "Doctor Who/Controllers/DoctorProfileViewController.h"; sourceTree = "<group>"; };
+		7CA4367B1C85B11900908B30 /* DoctorProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DoctorProfileViewController.m; path = "Doctor Who/Controllers/DoctorProfileViewController.m"; sourceTree = "<group>"; };
+		7CA4367C1C85B11900908B30 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "Doctor Who/Controllers/ViewController.h"; sourceTree = "<group>"; };
+		7CA4367D1C85B11900908B30 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "Doctor Who/Controllers/ViewController.m"; sourceTree = "<group>"; };
+		7CA436801C85B12D00908B30 /* Hospitals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Hospitals.json; path = JSON/Hospitals.json; sourceTree = "<group>"; };
+		7CA436811C85B12D00908B30 /* Specialities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Specialities.json; path = JSON/Specialities.json; sourceTree = "<group>"; };
+		7CA436821C85B12D00908B30 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = test.json; path = JSON/test.json; sourceTree = "<group>"; };
+		7CA436861C85B14A00908B30 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Utilities/Constants.h; sourceTree = "<group>"; };
+		7CA436871C85B14A00908B30 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Utilities/Constants.m; sourceTree = "<group>"; };
 		7CDD876E1C7C69D5001A753F /* Doctor Who.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doctor Who.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CDD87721C7C69D5001A753F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7CDD87741C7C69D5001A753F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7CDD87751C7C69D5001A753F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7CDD87771C7C69D5001A753F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "Doctor Who/ViewController.h"; sourceTree = "<group>"; };
-		7CDD87781C7C69D5001A753F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "Doctor Who/ViewController.m"; sourceTree = "<group>"; };
 		7CDD877B1C7C69D5001A753F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CDD877D1C7C69D5001A753F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CDD87801C7C69D5001A753F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CDD87821C7C69D5001A753F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CDDA3E31C7FF13800D9B453 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		7CDDA3E41C7FF13800D9B453 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
-		7CDDA3E71C80100A00D9B453 /* Hospitals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hospitals.json; sourceTree = "<group>"; };
-		7CDDA3E91C801C0700D9B453 /* Specialities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Specialities.json; sourceTree = "<group>"; };
-		7CDDA3EB1C80484400D9B453 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
-		7CE1A0841C7DD48F0096EF5C /* DoctorProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorProfileViewController.h; sourceTree = "<group>"; };
-		7CE1A0851C7DD48F0096EF5C /* DoctorProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorProfileViewController.m; sourceTree = "<group>"; };
 		8F091047A5FABAEB3A1BDC34 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7CA436731C85B06D00908B30 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7CA436861C85B14A00908B30 /* Constants.h */,
+				7CA436871C85B14A00908B30 /* Constants.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		7CDD87651C7C69D5001A753F = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +86,7 @@
 		7CDD87701C7C69D5001A753F /* Doctor Who */ = {
 			isa = PBXGroup;
 			children = (
+				7CA436731C85B06D00908B30 /* Utilities */,
 				7CDDA3E61C800FD500D9B453 /* JSON */,
 				7CDD877D1C7C69D5001A753F /* Assets.xcassets */,
 				7CDD878B1C7C75ED001A753F /* Controllers */,
@@ -102,14 +109,10 @@
 		7CDD878B1C7C75ED001A753F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7CDD87771C7C69D5001A753F /* ViewController.h */,
-				7CDD87781C7C69D5001A753F /* ViewController.m */,
-				7CE1A0841C7DD48F0096EF5C /* DoctorProfileViewController.h */,
-				7CE1A0851C7DD48F0096EF5C /* DoctorProfileViewController.m */,
-				7CD30DFB1C7EF1F300D65841 /* NawalokaViewController.h */,
-				7CD30DFC1C7EF1F300D65841 /* NawalokaViewController.m */,
-				7CDDA3E31C7FF13800D9B453 /* Constants.h */,
-				7CDDA3E41C7FF13800D9B453 /* Constants.m */,
+				7CA4367C1C85B11900908B30 /* ViewController.h */,
+				7CA4367D1C85B11900908B30 /* ViewController.m */,
+				7CA4367A1C85B11900908B30 /* DoctorProfileViewController.h */,
+				7CA4367B1C85B11900908B30 /* DoctorProfileViewController.m */,
 			);
 			name = Controllers;
 			path = ..;
@@ -118,9 +121,9 @@
 		7CDDA3E61C800FD500D9B453 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				7CDDA3E71C80100A00D9B453 /* Hospitals.json */,
-				7CDDA3E91C801C0700D9B453 /* Specialities.json */,
-				7CDDA3EB1C80484400D9B453 /* test.json */,
+				7CA436801C85B12D00908B30 /* Hospitals.json */,
+				7CA436811C85B12D00908B30 /* Specialities.json */,
+				7CA436821C85B12D00908B30 /* test.json */,
 			);
 			name = JSON;
 			sourceTree = "<group>";
@@ -128,8 +131,8 @@
 		7CE1A0811C7DCB7E0096EF5C /* AppMain */ = {
 			isa = PBXGroup;
 			children = (
-				7CDD87741C7C69D5001A753F /* AppDelegate.h */,
-				7CDD87751C7C69D5001A753F /* AppDelegate.m */,
+				7CA436771C85B0FB00908B30 /* AppDelegate.h */,
+				7CA436781C85B0FB00908B30 /* AppDelegate.m */,
 			);
 			name = AppMain;
 			sourceTree = "<group>";
@@ -220,12 +223,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CDDA3E81C80100A00D9B453 /* Hospitals.json in Resources */,
+				7CA436841C85B12D00908B30 /* Specialities.json in Resources */,
+				7CA436831C85B12D00908B30 /* Hospitals.json in Resources */,
 				7CDD87811C7C69D5001A753F /* LaunchScreen.storyboard in Resources */,
 				7CDD877E1C7C69D5001A753F /* Assets.xcassets in Resources */,
-				7CDDA3EA1C801C0700D9B453 /* Specialities.json in Resources */,
 				7CDD877C1C7C69D5001A753F /* Main.storyboard in Resources */,
-				7CDDA3EC1C80484400D9B453 /* test.json in Resources */,
+				7CA436851C85B12D00908B30 /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CE1A0861C7DD48F0096EF5C /* DoctorProfileViewController.m in Sources */,
-				7CDD87791C7C69D5001A753F /* ViewController.m in Sources */,
-				7CDD87761C7C69D5001A753F /* AppDelegate.m in Sources */,
-				7CD30DFD1C7EF1F300D65841 /* NawalokaViewController.m in Sources */,
-				7CDDA3E51C7FF13800D9B453 /* Constants.m in Sources */,
+				7CA4367F1C85B11900908B30 /* ViewController.m in Sources */,
+				7CA436791C85B0FB00908B30 /* AppDelegate.m in Sources */,
+				7CA4367E1C85B11900908B30 /* DoctorProfileViewController.m in Sources */,
 				7CDD87731C7C69D5001A753F /* main.m in Sources */,
+				7CA436881C85B14A00908B30 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -388,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -400,8 +402,9 @@
 			baseConfigurationReference = 7A141F6EB9C3E98B9F5F4C6B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "Doctor Who/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appmonkeyz.Doctor-Who";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,8 +416,9 @@
 			baseConfigurationReference = 8F091047A5FABAEB3A1BDC34 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "Doctor Who/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appmonkeyz.Doctor-Who";
 				PRODUCT_NAME = "$(TARGET_NAME)";

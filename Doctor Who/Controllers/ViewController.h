@@ -23,11 +23,10 @@
 @property (strong, nonatomic) DownPicker *specialityPicker;
 @property (strong, nonatomic) DownPicker *locationsPicker;
 
-- (IBAction) btnSearch:(id)sender;
+- (IBAction) btnSearch : (id) sender;
 
-- (void) sp_Selected:(id)dp;
-- (void)location_Selected:(id)dp;
+- (void) specialitiesSelected : (id) pickerData;
+- (void) locationSelected : (id) pickerData; //get location by  index
 
-- (void) locationSelected : (id) index;  //get location by  index
 
 @end

@@ -43,7 +43,7 @@
     self.hospitalsArray = NULL;
 }
 
-#pragma mark - Table View
+#pragma mark - TableView Delegate Methods
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     NSUInteger number = [self.hospitalsArray count];
     return number;

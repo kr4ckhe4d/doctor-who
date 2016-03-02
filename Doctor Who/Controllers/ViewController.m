@@ -10,6 +10,7 @@
 #import "DoctorProfileViewController.h"
 
 @interface ViewController  ()
+@property (weak, nonatomic) IBOutlet UIImageView *imageview;
 
 @end
 
@@ -34,7 +35,6 @@ NSInteger locationIndex;
     [super viewDidLoad];
     self.title = @"HOME";
     _btnDoctor.layer.cornerRadius = BUTTON_RADIUS;
-    
     
     doctorsArrayss = @{
                       @"names" : @[
@@ -67,12 +67,12 @@ NSInteger locationIndex;
     //Specialities Drop down configuration
     self.specialityPicker = [[DownPicker alloc] initWithTextField:self.txtSpeciality withData:[doctorsArrayss objectForKey:@"speciality"]];
     [self.specialityPicker setPlaceholder:@"- Speciality -"];
-    [self.specialityPicker addTarget:self action:@selector(sp_Selected:) forControlEvents:UIControlEventValueChanged];
+    [self.specialityPicker addTarget:self action:@selector(specialitiesSelected:) forControlEvents:UIControlEventValueChanged];
     
     //Locations Dropdown configuration
     self.locationsPicker = [[DownPicker alloc] initWithTextField:self.txtLocation withData:[doctorsArrayss objectForKey:@"locations"]];
     [self.locationsPicker setPlaceholder:@"- Location -"];
-    [self.locationsPicker addTarget:self action:@selector(location_Selected:) forControlEvents:UIControlEventValueChanged];
+    [self.locationsPicker addTarget:self action:@selector(locationSelected:) forControlEvents:UIControlEventValueChanged];
     
     //Search by name Text Field change event
     [_txtName addTarget:self
@@ -96,15 +96,16 @@ NSInteger locationIndex;
 }
 
 #pragma mark - Custom Methods
--(void)sp_Selected:(id)dp{
+- (void) specialitiesSelected : (id) pickerData{
+    NSLog(@"zzzzz%@",pickerData);
     NSLog(@"%@",[self.specialityPicker text]);
 }
 
--(void)location_Selected:(id)dp{
+- (void) locationSelected : (id) pickerData{
     NSLog(@"%@",[self.locationsPicker text]);
 }
 
--(void)textFieldDidChange:(id)dp{
+- (void) textFieldDidChange : (id) pickerData{
     searchString = [self.txtName text];
     NSString *predicate = [NSString stringWithFormat:@"SELF contains[c] '%@'",searchString];
     
@@ -144,8 +145,7 @@ NSInteger locationIndex;
     [super touchesBegan:touches withEvent:event];
 }
 
-
-#pragma mark - TableView delegate methods
+#pragma mark - TableView Delegate Methods
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     NSUInteger number = [matches count];
     return number;
@@ -177,13 +177,11 @@ NSInteger locationIndex;
 }
 
 #pragma mark - Prepare For Segue
-
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     NSInteger anIndex=[[doctorsArrayss objectForKey:@"names"] indexOfObject:[matches objectAtIndex:indexPath.row]];
     
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-    // now you can use cell.textLabel.text
     
     selectedName = cell.textLabel.text;
     selectedSpeciality = cell.detailTextLabel.text;
