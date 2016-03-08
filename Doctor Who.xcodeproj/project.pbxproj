@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D6C682CCA790B4C45FB70B4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BA545F08FB1E2810939787 /* libPods.a */; };
+		7CA436791C85B0FB00908B30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA436781C85B0FB00908B30 /* AppDelegate.m */; };
+		7CA4367E1C85B11900908B30 /* DoctorProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4367B1C85B11900908B30 /* DoctorProfileViewController.m */; };
+		7CA4367F1C85B11900908B30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4367D1C85B11900908B30 /* ViewController.m */; };
+		7CA436831C85B12D00908B30 /* Hospitals.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CA436801C85B12D00908B30 /* Hospitals.json */; };
+		7CA436841C85B12D00908B30 /* Specialities.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CA436811C85B12D00908B30 /* Specialities.json */; };
+		7CA436851C85B12D00908B30 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CA436821C85B12D00908B30 /* test.json */; };
+		7CA436881C85B14A00908B30 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA436871C85B14A00908B30 /* Constants.m */; };
+		7CDD87731C7C69D5001A753F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDD87721C7C69D5001A753F /* main.m */; };
+		7CDD877C1C7C69D5001A753F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CDD877A1C7C69D5001A753F /* Main.storyboard */; };
+		7CDD877E1C7C69D5001A753F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CDD877D1C7C69D5001A753F /* Assets.xcassets */; };
+		7CDD87811C7C69D5001A753F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CDD877F1C7C69D5001A753F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		61BA545F08FB1E2810939787 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A141F6EB9C3E98B9F5F4C6B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7CA436771C85B0FB00908B30 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppMain/AppDelegate.h; sourceTree = "<group>"; };
+		7CA436781C85B0FB00908B30 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppMain/AppDelegate.m; sourceTree = "<group>"; };
+		7CA4367A1C85B11900908B30 /* DoctorProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DoctorProfileViewController.h; path = "Doctor Who/Controllers/DoctorProfileViewController.h"; sourceTree = "<group>"; };
+		7CA4367B1C85B11900908B30 /* DoctorProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DoctorProfileViewController.m; path = "Doctor Who/Controllers/DoctorProfileViewController.m"; sourceTree = "<group>"; };
+		7CA4367C1C85B11900908B30 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "Doctor Who/Controllers/ViewController.h"; sourceTree = "<group>"; };
+		7CA4367D1C85B11900908B30 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "Doctor Who/Controllers/ViewController.m"; sourceTree = "<group>"; };
+		7CA436801C85B12D00908B30 /* Hospitals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Hospitals.json; path = JSON/Hospitals.json; sourceTree = "<group>"; };
+		7CA436811C85B12D00908B30 /* Specialities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Specialities.json; path = JSON/Specialities.json; sourceTree = "<group>"; };
+		7CA436821C85B12D00908B30 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = test.json; path = JSON/test.json; sourceTree = "<group>"; };
+		7CA436861C85B14A00908B30 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Utilities/Constants.h; sourceTree = "<group>"; };
+		7CA436871C85B14A00908B30 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Utilities/Constants.m; sourceTree = "<group>"; };
+		7CDD876E1C7C69D5001A753F /* Doctor Who.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doctor Who.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CDD87721C7C69D5001A753F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7CDD877B1C7C69D5001A753F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CDD877D1C7C69D5001A753F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CDD87801C7C69D5001A753F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CDD87821C7C69D5001A753F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F091047A5FABAEB3A1BDC34 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CDD876B1C7C69D5001A753F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6C682CCA790B4C45FB70B4 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CA436731C85B06D00908B30 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7CA436861C85B14A00908B30 /* Constants.h */,
+				7CA436871C85B14A00908B30 /* Constants.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		7CDD87651C7C69D5001A753F = {
+			isa = PBXGroup;
+			children = (
+				7CDD87701C7C69D5001A753F /* Doctor Who */,
+				7CDD876F1C7C69D5001A753F /* Products */,
+				C336DCBE540684EA4C5B126B /* Pods */,
+				A9BD1595347B25EFB7B3CE0A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7CDD876F1C7C69D5001A753F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CDD876E1C7C69D5001A753F /* Doctor Who.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CDD87701C7C69D5001A753F /* Doctor Who */ = {
+			isa = PBXGroup;
+			children = (
+				7CA436731C85B06D00908B30 /* Utilities */,
+				7CDDA3E61C800FD500D9B453 /* JSON */,
+				7CDD877D1C7C69D5001A753F /* Assets.xcassets */,
+				7CDD878B1C7C75ED001A753F /* Controllers */,
+				7CE1A0821C7DCB910096EF5C /* Views */,
+				7CE1A0811C7DCB7E0096EF5C /* AppMain */,
+				7CDD87711C7C69D5001A753F /* Supporting Files */,
+			);
+			path = "Doctor Who";
+			sourceTree = "<group>";
+		};
+		7CDD87711C7C69D5001A753F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CDD87821C7C69D5001A753F /* Info.plist */,
+				7CDD87721C7C69D5001A753F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CDD878B1C7C75ED001A753F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7CA4367C1C85B11900908B30 /* ViewController.h */,
+				7CA4367D1C85B11900908B30 /* ViewController.m */,
+				7CA4367A1C85B11900908B30 /* DoctorProfileViewController.h */,
+				7CA4367B1C85B11900908B30 /* DoctorProfileViewController.m */,
+			);
+			name = Controllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7CDDA3E61C800FD500D9B453 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				7CA436801C85B12D00908B30 /* Hospitals.json */,
+				7CA436811C85B12D00908B30 /* Specialities.json */,
+				7CA436821C85B12D00908B30 /* test.json */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		7CE1A0811C7DCB7E0096EF5C /* AppMain */ = {
+			isa = PBXGroup;
+			children = (
+				7CA436771C85B0FB00908B30 /* AppDelegate.h */,
+				7CA436781C85B0FB00908B30 /* AppDelegate.m */,
+			);
+			name = AppMain;
+			sourceTree = "<group>";
+		};
+		7CE1A0821C7DCB910096EF5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CDD877A1C7C69D5001A753F /* Main.storyboard */,
+				7CDD877F1C7C69D5001A753F /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A9BD1595347B25EFB7B3CE0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61BA545F08FB1E2810939787 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C336DCBE540684EA4C5B126B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A141F6EB9C3E98B9F5F4C6B /* Pods.debug.xcconfig */,
+				8F091047A5FABAEB3A1BDC34 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CDD876D1C7C69D5001A753F /* Doctor Who */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CDD87851C7C69D5001A753F /* Build configuration list for PBXNativeTarget "Doctor Who" */;
+			buildPhases = (
+				150E7B88C3F1F49074654263 /* Check Pods Manifest.lock */,
+				7CDD876A1C7C69D5001A753F /* Sources */,
+				7CDD876B1C7C69D5001A753F /* Frameworks */,
+				7CDD876C1C7C69D5001A753F /* Resources */,
+				D53180B4F12CB0E5888D195C /* Embed Pods Frameworks */,
+				E49EE74F59F2072AA91F294E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Doctor Who";
+			productName = "Doctor Who";
+			productReference = 7CDD876E1C7C69D5001A753F /* Doctor Who.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CDD87661C7C69D5001A753F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Appmonkeyz;
+				TargetAttributes = {
+					7CDD876D1C7C69D5001A753F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 7CDD87691C7C69D5001A753F /* Build configuration list for PBXProject "Doctor Who" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CDD87651C7C69D5001A753F;
+			productRefGroup = 7CDD876F1C7C69D5001A753F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CDD876D1C7C69D5001A753F /* Doctor Who */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CDD876C1C7C69D5001A753F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA436841C85B12D00908B30 /* Specialities.json in Resources */,
+				7CA436831C85B12D00908B30 /* Hospitals.json in Resources */,
+				7CDD87811C7C69D5001A753F /* LaunchScreen.storyboard in Resources */,
+				7CDD877E1C7C69D5001A753F /* Assets.xcassets in Resources */,
+				7CDD877C1C7C69D5001A753F /* Main.storyboard in Resources */,
+				7CA436851C85B12D00908B30 /* test.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		150E7B88C3F1F49074654263 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D53180B4F12CB0E5888D195C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E49EE74F59F2072AA91F294E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CDD876A1C7C69D5001A753F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA4367F1C85B11900908B30 /* ViewController.m in Sources */,
+				7CA436791C85B0FB00908B30 /* AppDelegate.m in Sources */,
+				7CA4367E1C85B11900908B30 /* DoctorProfileViewController.m in Sources */,
+				7CDD87731C7C69D5001A753F /* main.m in Sources */,
+				7CA436881C85B14A00908B30 /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7CDD877A1C7C69D5001A753F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CDD877B1C7C69D5001A753F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CDD877F1C7C69D5001A753F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CDD87801C7C69D5001A753F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CDD87831C7C69D5001A753F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7CDD87841C7C69D5001A753F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CDD87861C7C69D5001A753F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A141F6EB9C3E98B9F5F4C6B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = "Doctor Who/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appmonkeyz.Doctor-Who";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7CDD87871C7C69D5001A753F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F091047A5FABAEB3A1BDC34 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = "Doctor Who/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appmonkeyz.Doctor-Who";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CDD87691C7C69D5001A753F /* Build configuration list for PBXProject "Doctor Who" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CDD87831C7C69D5001A753F /* Debug */,
+				7CDD87841C7C69D5001A753F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CDD87851C7C69D5001A753F /* Build configuration list for PBXNativeTarget "Doctor Who" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CDD87861C7C69D5001A753F /* Debug */,
+				7CDD87871C7C69D5001A753F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CDD87661C7C69D5001A753F /* Project object */;
+}
